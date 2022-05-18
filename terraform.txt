@@ -1,0 +1,10 @@
+terraform 
+Defining a variable at run time :
+1)terraform plan -var="instancetype = t2.small"
+2)if folder file name is not same as variable file name i.e, folder = terraform  variable filename = custom then 
+in run time give :terraform plan -var-file = "custom.tfvars" 
+
+3)env variable: run time 
+		setx TF_VAR_instancetype m5.large
+4) To verify : echo %TF_VAR_instancetype% (Windows)
+			in new  terminal do the above command
